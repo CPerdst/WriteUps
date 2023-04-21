@@ -1,0 +1,13 @@
+#/bin/bash
+src="/mnt/c/Users/25394/Downloads/"
+dest="/home/banser/Usr/Pwndir/"
+test=$(pwd)
+echo $test
+if [ $1 ]
+then
+    file="$src$1"
+    if [ -e $file ]
+    then
+        cp -r $file "$dest$1"
+    fi
+fi
